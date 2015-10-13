@@ -1,1 +1,174 @@
-/* Your stylesheet goes here */
+/* imports Bootstrap CSS */
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+/* imports fonts for the page */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic);
+/* imports font for email, phone, and twitter logo */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+body {
+	background-color: #E9EAEE;
+	font-family: Lato, Helvetica Neue, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+h1 {
+	font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
+	padding-top: 3em;
+}
+
+h2 {
+	color: #BC6026;
+}
+
+li {
+	display: inline;
+}
+
+nav {
+	background-color: #181C22;
+	font-size: 16px;
+}
+
+#active {
+	margin-left: 15px;
+}
+
+#footer {
+	background-color: #afb3c2;
+	border-top: 3px solid #D87E28;
+	clear: both;
+	font-size: 12px;
+	padding-top: 1em;
+}
+
+#headline {
+	font-style: italic;
+}
+
+#icon {
+	visibility: hidden;
+}
+
+#info, #story {
+	background-color: #dbdce3;
+}
+
+#motto {
+	visibility: hidden;
+}
+
+#storyimg {
+	border-radius: 5px;
+	float: right;
+	left-margin: 1em;
+	max-height: 300px;
+}
+
+.description {
+	font-style: italic;
+	padding-left: 1em;
+}
+
+.infoicon {
+	text-align: center;
+}
+
+.navlink {
+	color: white;
+	font-variant: small-caps;
+	padding: .5em;
+	text-decoration: none;
+}
+
+.navlink:hover {
+	color: #D87E28;
+	text-decoration: none;
+}
+
+svg {
+	height: 1em;
+	fill: currentColor;
+}
+
+/* CSS that changes when the screen is larger than 768px */
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 20px;
+	}
+
+	h2 {
+		margin-bottom: 1em;
+		text-align: center;
+	}
+
+	nav {
+		background-color: rgba(24, 28, 34, 0.8);
+	}
+
+	#iconsby {
+		text-align: right;
+	}
+
+	#header {
+		background-image: url('../img/background-sm.jpg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		color: white;
+		min-height: 550px;
+		text-align: right;
+	}
+
+	#headline {
+		font-size: 1.25em;
+		padding-bottom: 3em;
+		padding-top: 3em;
+		text-align: center;
+	}
+
+	#icon {
+		height: 1.5em;
+		margin-bottom: 1em;
+		visibility: visible;
+	}
+
+	#map {
+		border-radius: 5px;
+	}
+
+	#motto {
+		visibility: visible;
+	}
+
+	#storyimg {
+		max-height: 400px;
+	}
+
+	.navlink {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+}
+
+/* CSS that changes when the screen is larger than 992px */
+@media screen and (min-width: 992px) {
+	#header {
+		background-image: url('../img/background-md.jpg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	h1 {
+		font-size: 4em;
+	}
+}
+
+/* CSS that changes when the screen is larger than 1200px */
+@media screen and (min-width: 1200px) {
+	#header {
+		background-image: url('../img/background-lg.jpg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+}
