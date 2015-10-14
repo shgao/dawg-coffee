@@ -13,6 +13,11 @@ body {
 	font-weight: 300;
 }
 
+dd {
+	font-style: italic;
+	padding-left: 1em;
+}
+
 h1 {
 	font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
 	padding-top: 3em;
@@ -29,6 +34,10 @@ li {
 nav {
 	background-color: #181C22;
 	font-size: 16px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
 }
 
 #active {
@@ -48,7 +57,7 @@ nav {
 }
 
 #icon {
-	visibility: hidden;
+	display: none;
 }
 
 #info, #story {
@@ -56,7 +65,7 @@ nav {
 }
 
 #motto {
-	visibility: hidden;
+	display: none;
 }
 
 #storyimg {
@@ -64,11 +73,6 @@ nav {
 	float: right;
 	left-margin: 1em;
 	max-height: 300px;
-}
-
-.description {
-	font-style: italic;
-	padding-left: 1em;
 }
 
 .navlink {
@@ -126,7 +130,7 @@ svg {
 	#icon {
 		height: 1.5em;
 		margin-bottom: 1em;
-		visibility: visible;
+		display: inline;
 	}
 
 	#map {
@@ -134,7 +138,7 @@ svg {
 	}
 
 	#motto {
-		visibility: visible;
+		display: inherit;
 	}
 
 	#storyimg {
